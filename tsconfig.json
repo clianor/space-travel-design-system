@@ -12,6 +12,12 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "jsx": "react"
+    "jsx": "react",
+    "paths": {
+      "@space-travel-design-system/ui": ["./packages/ui/src"],
+      "@space-travel-design-system/ui/*": ["./packages/ui/src/*"],
+      "@space-travel-design-system/utils": ["./packages/utils/src"],
+      "@space-travel-design-system/utils/*": ["./packages/utils/src/*"]
+    }
   }
 }
