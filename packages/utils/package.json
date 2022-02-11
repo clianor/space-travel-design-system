@@ -1,0 +1,14 @@
+{
+  "name": "@space-travel-design-system/utils",
+  "version": "0.0.1",
+  "main": "build/bundle.cjs.js",
+  "module": "build/bundle.esm.js",
+  "scripts": {
+    "build": "rollup -c ../../rollup.config.js",
+    "prebuild": "yarn run clean",
+    "clean": "rimraf ./build"
+  },
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
+  }
+}
