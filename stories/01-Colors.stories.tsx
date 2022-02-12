@@ -1,7 +1,7 @@
-import React from 'react';
-import { Meta, Story } from '@storybook/react';
-import Colors from './components/Colors';
 import GlobalStyle from '@space-travel-design-system/ui/GlobalStyle/GlobalStyle';
+import { Meta, Story } from '@storybook/react';
+import React from 'react';
+import Colors from './components/Colors';
 
 export default {
   title: 'Design System/01 - Colors',

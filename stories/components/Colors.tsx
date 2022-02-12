@@ -1,32 +1,6 @@
-import React from 'react';
 import styled from '@emotion/styled';
-
-const Section = styled.section`
-  background-color: var(--st-dark);
-  color: var(--st-white);
-  padding: 2rem 4rem;
-
-  & > h2 {
-    font-family: var(--st-ff-sans-cond);
-    font-size: var(--st-fs-500);
-    text-transform: uppercase;
-    letter-spacing: 4.72px;
-  }
-  & > h2 span {
-    margin-right: 0.5em;
-    font-weight: 700;
-    color: var(--st-gray);
-  }
-`;
-
-const Container = styled.div`
-  display: flex;
-  gap: var(--gap, 1rem);
-`;
-
-const Wrapper = styled.div`
-  flex-grow: 1;
-`;
+import React from 'react';
+import { AccentText, Container, Section, Wrapper } from './styled';
 
 const ColorBlock = styled.div<{ color: 'dark' | 'light' | 'white' }>(
   (props) => `
@@ -36,10 +10,6 @@ const ColorBlock = styled.div<{ color: 'dark' | 'light' | 'white' }>(
     border: 1px solid white;
   `,
 );
-
-const AccentText = styled.span`
-  color: var(--st-light);
-`;
 
 function Colors() {
   return (

@@ -1,12 +1,11 @@
-import { Button, ButtonProps } from '@space-travel-design-system/ui';
 import GlobalStyle from '@space-travel-design-system/ui/GlobalStyle/GlobalStyle';
-import { roll } from '@space-travel-design-system/utils';
 import { Meta, Story } from '@storybook/react';
 import React from 'react';
+import Typography from './components/Typography';
 
 export default {
-  title: 'Example/Button',
-  component: Button,
+  title: 'Design System/02 - Typography',
+  component: Typography,
   parameters: {
     docs: {
       inlineStories: true,
@@ -22,10 +21,7 @@ export default {
   ],
 } as Meta;
 
-const Template: Story<ButtonProps> = (args) => <Button {...args} />;
+const Template: Story = () => <Typography />;
 
 export const Default = Template.bind({});
-Default.args = {
-  type: 'button',
-  children: roll('1d20'),
-};
+Default.args = {};
