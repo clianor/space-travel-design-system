@@ -8,6 +8,7 @@
     "prebuild": "yarn run clean",
     "clean": "rimraf ./build"
   },
+  "dependencies": {},
   "devDependencies": {
     "@types/react": "^17.0.39",
     "react": "^17.0.2",
