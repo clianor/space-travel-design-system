@@ -4,7 +4,7 @@ import { AccentText, Container, Section, Wrapper } from './styled';
 
 function Typography() {
   return (
-    <Section>
+    <Section style={{ '--flow-space': '4rem' } as any}>
       <h2>
         <span>02 </span>Typography
       </h2>

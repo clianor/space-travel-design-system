@@ -25,6 +25,9 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   flex-basis: 100%;
+  & > *:where(:not(:first-child)) {
+    margin-top: var(--flow-space, 1rem);
+  }
 `;
 
 export const AccentText = styled.span`
