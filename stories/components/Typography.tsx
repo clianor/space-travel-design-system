@@ -1,6 +1,6 @@
 import { Heading, Text } from '@space-travel-design-system/ui';
 import React from 'react';
-import { AccentText, Container, Section, Wrapper } from './styled';
+import { AccentText, Flex, Flow, Section } from './styled';
 
 function Typography() {
   return (
@@ -9,22 +9,22 @@ function Typography() {
         <span>02 </span>Typography
       </h2>
 
-      <Container>
-        <Wrapper>
+      <Flex>
+        <Flow>
           <div>
-            <AccentText as='p'>Heading 1 - Bellefair Regular - 150px</AccentText>
+            <AccentText as='p'>Heading 1 - Bellefair Regular - 128px</AccentText>
             <Heading as='h1' size='4xl' fonts='serif' isUpperCase>
               Earth
             </Heading>
           </div>
           <div>
-            <AccentText as='p'>Heading 2 - Bellefair Regular - 100px</AccentText>
+            <AccentText as='p'>Heading 2 - Bellefair Regular - 80px</AccentText>
             <Heading size='3xl' fonts='serif' isUpperCase>
               Venus
             </Heading>
           </div>
           <div>
-            <AccentText as='p'>Heading 3 - Bellefair Regular - 56px</AccentText>
+            <AccentText as='p'>Heading 3 - Bellefair Regular - 48px</AccentText>
             <Heading as='h3' fonts='serif' size='2xl' isUpperCase>
               Jupiter & Saturn
             </Heading>
@@ -36,7 +36,7 @@ function Typography() {
             </Heading>
           </div>
           <div>
-            <AccentText as='p'>Heading 5 - Barlow Condensed Regular - 28px - 4.75 Character Space</AccentText>
+            <AccentText as='p'>Heading 5 - Barlow Condensed Regular - 20px - 4.75 Character Space</AccentText>
             <Heading
               as='h5'
               fonts='sans-cond'
@@ -50,23 +50,23 @@ function Typography() {
               So, you want to travel to space
             </Heading>
           </div>
-        </Wrapper>
+        </Flow>
 
-        <Wrapper>
+        <Flow>
           <div>
-            <AccentText as='p'>Subheading 1 - Bellefair Regular - 28px</AccentText>
+            <AccentText as='p'>Subheading 1 - Bellefair Regular - 20px</AccentText>
             <Heading as='h6' size='lg' fonts='serif' isUpperCase>
               384,400 km
             </Heading>
           </div>
           <div>
-            <AccentText as='p'>Subheading 2 - Barlow Condensed Regular - 14px - 2.35 Character Space</AccentText>
+            <AccentText as='p'>Subheading 2 - Barlow Condensed Regular - 12px - 2.35 Character Space</AccentText>
             <Heading as='h6' size='xs' fonts='sans-cond' spacing='3' isUpperCase>
               Avg. Distance
             </Heading>
           </div>
           <div>
-            <AccentText as='p'>Nav Text - Barlow Condensed Regular - 16px - 2.7 Character Space</AccentText>
+            <AccentText as='p'>Nav Text - Barlow Condensed Regular - 14px - 2.7 Character Space</AccentText>
             <Text size='sm' fonts='sans-cond' spacing='2' isUpperCase>
               Europa
             </Text>
@@ -84,8 +84,8 @@ function Typography() {
               hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi.
             </Text>
           </div>
-        </Wrapper>
-      </Container>
+        </Flow>
+      </Flex>
     </Section>
   );
 }

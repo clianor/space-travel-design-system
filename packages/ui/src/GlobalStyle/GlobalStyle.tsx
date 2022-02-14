@@ -11,14 +11,14 @@ const styles = css`
     --st-white: hsl(0 0% 100%);
 
     /* font-sizes */
-    --st-fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
-    --st-fs-800: 3.5rem;
-    --st-fs-700: 1.5rem;
-    --st-fs-600: 1rem;
-    --st-fs-500: 1rem;
-    --st-fs-400: 0.9375rem;
-    --st-fs-300: 1rem;
-    --st-fs-200: 0.875rem;
+    --st-fs-900: 8rem;
+    --st-fs-800: 5rem;
+    --st-fs-700: 3rem;
+    --st-fs-600: 2rem;
+    --st-fs-500: 1.25rem;
+    --st-fs-400: 1rem;
+    --st-fs-300: 0.875rem;
+    --st-fs-200: 0.75rem;
 
     /* font-families */
     --st-ff-serif: 'Bellefair', serif;

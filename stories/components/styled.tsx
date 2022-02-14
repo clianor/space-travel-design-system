@@ -8,6 +8,7 @@ export const Section = styled.section`
   & > h2 {
     font-family: var(--st-ff-sans-cond);
     font-size: var(--st-fs-500);
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 4.72px;
   }
@@ -18,12 +19,12 @@ export const Section = styled.section`
   }
 `;
 
-export const Container = styled.div`
+export const Flex = styled.div`
   display: flex;
   gap: var(--gap, 1rem);
 `;
 
-export const Wrapper = styled.div`
+export const Flow = styled.div`
   flex-basis: 100%;
   & > *:where(:not(:first-child)) {
     margin-top: var(--flow-space, 1rem);
