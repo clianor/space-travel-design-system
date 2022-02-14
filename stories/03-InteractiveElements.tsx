@@ -1,13 +1,11 @@
 import GlobalStyle from '@space-travel-design-system/ui/GlobalStyle/GlobalStyle';
 import { Meta, Story } from '@storybook/react';
 import React from 'react';
-import Colors from './components/Colors';
 import InteractiveElements from './components/InteractiveElements';
-import Typography from './components/Typography';
 
 export default {
-  title: 'Design System/00 - DesignSystem',
-  component: Colors,
+  title: 'Design System/03 - Interactive Elements',
+  component: InteractiveElements,
   parameters: {
     docs: {
       inlineStories: true,
@@ -23,13 +21,7 @@ export default {
   ],
 } as Meta;
 
-const Template: Story = () => (
-  <>
-    <Colors />
-    <Typography />
-    <InteractiveElements />
-  </>
-);
+const Template: Story = () => <InteractiveElements />;
 
 export const Default = Template.bind({});
 Default.args = {};

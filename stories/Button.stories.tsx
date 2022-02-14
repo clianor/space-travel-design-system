@@ -1,11 +1,11 @@
-import { Button, ButtonProps } from '@space-travel-design-system/ui';
+import { AnchorProps, Button } from '@space-travel-design-system/ui';
 import GlobalStyle from '@space-travel-design-system/ui/GlobalStyle/GlobalStyle';
 import { roll } from '@space-travel-design-system/utils';
 import { Meta, Story } from '@storybook/react';
 import React from 'react';
 
 export default {
-  title: 'Example/Button',
+  title: 'Example/Anchor',
   component: Button,
   parameters: {
     docs: {
@@ -22,7 +22,7 @@ export default {
   ],
 } as Meta;
 
-const Template: Story<ButtonProps> = (args) => <Button {...args} />;
+const Template: Story<AnchorProps> = (args) => <Button {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
