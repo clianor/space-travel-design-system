@@ -1,4 +1,4 @@
-import { Anchor, Text } from '@space-travel-design-system/ui';
+import { Anchor, Tab, Tabs, Text } from '@space-travel-design-system/ui';
 import React from 'react';
 import { Flex, Flow, Section } from './styled';
 
@@ -22,7 +22,16 @@ function InteractiveElements() {
         </Flow>
 
         <Flow>
-          <div></div>
+          {/* Tabs */}
+          <Tabs>
+            <Tab active label='Moon' />
+            <Tab label='Mars' />
+            <Tab label='Europa' />
+          </Tabs>
+
+          {/* Dots */}
+
+          {/* Numbers */}
         </Flow>
       </Flex>
     </Section>
