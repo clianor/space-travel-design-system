@@ -1,4 +1,4 @@
-import { Anchor, Tab, Tabs, Text } from '@space-travel-design-system/ui';
+import { Anchor, Dot, Tab, Tabs, Text } from '@space-travel-design-system/ui';
 import React from 'react';
 import { Flex, Flow, Section } from './styled';
 
@@ -47,6 +47,11 @@ function InteractiveElements() {
           </Tabs>
 
           {/* Dots */}
+          <Flex style={{ marginTop: '4rem' }}>
+            <Dot active />
+            <Dot />
+            <Dot />
+          </Flex>
 
           {/* Numbers */}
         </Flow>
