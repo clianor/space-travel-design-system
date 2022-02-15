@@ -10,6 +10,21 @@ function InteractiveElements() {
       </h2>
 
       {/* navigation */}
+      <Tabs
+        gap='clamp(1.5rem, 5vw, 3.5rem)'
+        size='lg'
+        style={{ margin: '2rem 0', '--st-light': 'var(--st-white)' } as any}
+      >
+        <Tab active href='#'>
+          <span>01</span>Active
+        </Tab>
+        <Tab href='#'>
+          <span>02</span>Hover
+        </Tab>
+        <Tab href='#'>
+          <span>03</span>Idle
+        </Tab>
+      </Tabs>
 
       <Flex>
         <Flow>
@@ -24,9 +39,11 @@ function InteractiveElements() {
         <Flow>
           {/* Tabs */}
           <Tabs>
-            <Tab active label='Moon' />
-            <Tab label='Mars' />
-            <Tab label='Europa' />
+            <Tab active href='#'>
+              Moon
+            </Tab>
+            <Tab>Mars</Tab>
+            <Tab>Europa</Tab>
           </Tabs>
 
           {/* Dots */}
