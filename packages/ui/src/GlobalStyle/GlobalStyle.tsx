@@ -6,9 +6,9 @@ const styles = css`
 
   :root {
     /* colors */
-    --st-dark: hsl(230 35% 7%);
-    --st-light: hsl(231 77% 90%);
-    --st-white: hsl(0 0% 100%);
+    --st-dark: 230 35% 7%;
+    --st-light: 231 77% 90%;
+    --st-white: 0 0% 100%;
 
     /* font-sizes */
     --st-fs-900: 8rem;

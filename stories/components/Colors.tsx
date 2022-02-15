@@ -4,8 +4,8 @@ import { AccentText, Flex, Flow, Section } from './styled';
 
 const ColorBlock = styled.div<{ color: 'dark' | 'light' | 'white' }>(
   (props) => `
-    background-color: var(--st-${props.color});
-    color: ${props.color === 'dark' ? 'var(--st-white)' : 'var(--st-dark)'};
+    background-color: hsl(var(--st-${props.color}));
+    color: ${props.color === 'dark' ? 'hsl(var(--st-white))' : 'hsl(var(--st-dark))'};
     padding: 3rem 1rem 1rem; 
     border: 1px solid white;
   `,

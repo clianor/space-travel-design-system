@@ -44,7 +44,7 @@ function Typography() {
               spacing='1'
               isUpperCase
               style={{
-                color: 'var(--st-light)',
+                color: 'hsl(var(--st-light))',
               }}
             >
               So, you want to travel to space

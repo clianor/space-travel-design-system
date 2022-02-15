@@ -9,8 +9,8 @@ const StyledAnchor = styled.a`
   font-size: 2rem;
   position: relative;
   z-index: 1;
-  color: var(--st-dark);
-  background-color: var(--st-white);
+  color: hsl(var(--st-dark));
+  background-color: hsl(var(--st-white));
   display: inline-grid;
   place-items: center;
   padding: 0 2em;
@@ -24,7 +24,7 @@ const StyledAnchor = styled.a`
     z-index: -1;
     width: 100%;
     height: 100%;
-    background-color: hsl(0 0% 100% / 0.15);
+    background-color: hsl(var(--st-white) / 0.15);
     border-radius: 50%;
     opacity: 0;
     transition: opacity 500ms linear, transform 750ms ease-in-out;

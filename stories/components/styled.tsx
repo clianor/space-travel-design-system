@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 
 export const Section = styled.section`
-  background-color: var(--st-dark);
-  color: var(--st-white);
+  background-color: hsl(var(--st-dark));
+  color: hsl(var(--st-white));
   padding: 2rem 4rem;
 
   & > h2 {
@@ -15,7 +15,7 @@ export const Section = styled.section`
   & > h2 span {
     margin-right: 0.5em;
     font-weight: 700;
-    color: hsl(0 0% 100% / 0.25);
+    color: hsl(var(--st-white) / 0.25);
   }
 `;
 
@@ -32,5 +32,5 @@ export const Flow = styled.div`
 `;
 
 export const AccentText = styled.span`
-  color: var(--st-light);
+  color: hsl(var(--st-light));
 `;
