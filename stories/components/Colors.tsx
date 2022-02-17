@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Heading, Text } from '@space-travel-design-system/ui';
 import React from 'react';
 import { AccentText, Flex, Flow, Section } from './styled';
 
@@ -14,9 +15,12 @@ const ColorBlock = styled.div<{ color: 'dark' | 'light' | 'white' }>(
 function Colors() {
   return (
     <Section>
-      <h2>
-        <span>01</span> colors
-      </h2>
+      <Heading size='lg' spacing='1'>
+        <Text as='span' size='lg' spacing='0' style={{ fontWeight: '700', color: 'hsl(var(--st-white) / 0.25)' }}>
+          01
+        </Text>{' '}
+        Colors
+      </Heading>
 
       <Flex>
         <Flow>

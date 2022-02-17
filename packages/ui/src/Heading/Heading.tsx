@@ -1,26 +1,33 @@
 import styled from '@emotion/styled';
 import { Fonts, LetterSpacing, Sizes } from '@space-travel-design-system/ui/types';
-import React, { PropsWithChildren } from 'react';
+import React, { forwardRef, HTMLAttributes } from 'react';
 
-export interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
+interface HeadingProps extends Omit<HTMLAttributes<HTMLHeadingElement>, 'size'> {
+  children?: React.ReactNode;
   as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
   size?: keyof typeof Sizes;
   fonts?: keyof typeof Fonts;
-  spacing?: '1' | '2' | '3';
+  spacing?: '0' | '1' | '2' | '3';
   isUpperCase?: boolean;
 }
 
-const StyledHeading = styled.h2<HeadingProps & Required<Pick<HeadingProps, 'size' | 'isUpperCase'>>>`
+type InnerPropsType = HeadingProps & Pick<Required<HeadingProps>, 'as' | 'size' | 'isUpperCase'>;
+
+const StyledHeading = styled.h2<InnerPropsType>`
   font-size: ${(props) => `var(${Sizes[props.size]});`};
   ${(props) => props.fonts && `font-family: var(${Fonts[props.fonts]});`}
   ${(props) => props.spacing && `letter-spacing: ${LetterSpacing[`letter-spacing-${props.spacing}`]};`}
   ${(props) => props.isUpperCase && 'text-transform: uppercase;'}
+  
+  & > .numbered {
+    margin-right: 0.5em;
+    font-weight: 700;
+    color: hsl(var(--st-white) / 0.25);
+  }
 `;
 
-const Heading = React.forwardRef<HTMLHeadingElement, HeadingProps>((props, ref) => {
-  const { ...rest } = props as PropsWithChildren<
-    HeadingProps & Pick<Required<HeadingProps>, 'as' | 'size' | 'isUpperCase'>
-  >;
+const Heading = forwardRef<HTMLHeadingElement, HeadingProps>((props, ref) => {
+  const { ...rest } = props as InnerPropsType;
   return <StyledHeading ref={ref} {...rest} />;
 });
 

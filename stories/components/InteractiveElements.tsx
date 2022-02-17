@@ -1,13 +1,16 @@
-import { Anchor, Dot, Tab, Tabs, Text } from '@space-travel-design-system/ui';
+import { Anchor, Dot, Heading, Tab, Tabs, Text } from '@space-travel-design-system/ui';
 import React from 'react';
 import { Flex, Flow, Section } from './styled';
 
 function InteractiveElements() {
   return (
     <Section>
-      <h2>
-        <span>03 </span>Interactive Elements
-      </h2>
+      <Heading size='lg' spacing='1'>
+        <Text as='span' size='lg' spacing='0' style={{ fontWeight: '700', color: 'hsl(var(--st-white) / 0.25)' }}>
+          03
+        </Text>{' '}
+        InteractiveElements
+      </Heading>
 
       {/* navigation */}
       <Tabs

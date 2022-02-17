@@ -16,6 +16,7 @@ export enum Fonts {
 }
 
 export enum LetterSpacing {
+  'letter-spacing-0' = '0',
   'letter-spacing-1' = '4.75px',
   'letter-spacing-2' = '2.7px',
   'letter-spacing-3' = '2.35px',

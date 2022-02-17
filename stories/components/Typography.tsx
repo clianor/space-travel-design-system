@@ -5,9 +5,12 @@ import { AccentText, Flex, Flow, Section } from './styled';
 function Typography() {
   return (
     <Section style={{ '--flow-space': '4rem' } as any}>
-      <h2>
-        <span>02 </span>Typography
-      </h2>
+      <Heading size='lg' spacing='1'>
+        <Text as='span' size='lg' spacing='0' style={{ fontWeight: '700', color: 'hsl(var(--st-white) / 0.25)' }}>
+          02
+        </Text>{' '}
+        Typography
+      </Heading>
 
       <Flex>
         <Flow>
